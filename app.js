@@ -8,6 +8,7 @@ const path = require("path");
 const fs = require("fs");
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
+
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
@@ -17,8 +18,39 @@ async function init(){
     teamInput = new tInput.TeamInput();
     await teamInput.generateTeam();
 
-    // let teamData = [];
+    let employees = [];
 
+    for (record of teamInput.allAnswers) {
+        let employee = {};
+            switch (record.role){
+                case "Manager":
+                    employee = new Manager(record.name, record.id, record.email, record.officeNumber);
+            
+                break;
+
+                case "Engineer":
+                        employee = new Engineer(record.name, record.id, record.email, record.github);
+                
+                break;
+
+                case "Intern":
+                    employee = new Intern(record.name, record.id, record.email, record.school);
+            
+                break;
+            }
+            employees.push(employee);
+    }
+
+    let teamPage = render(employees);
+
+    if (!fs.existsSync(OUTPUT_DIR)){
+        fs.mkdirSync(OUTPUT_DIR)
+    }
+
+    fs.writeFile(outputPath, teamPage, (err)=> {
+        if (err) throw err;
+        else console.log("team.html successfully generated");
+    });
 
     
 
