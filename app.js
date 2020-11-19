@@ -29,7 +29,6 @@ async function init(){
                 case "Manager":
                     var phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
                         record.phone = record.phone.replace(phoneRegex, "($1) $2-$3");
-                        console.log(record.phone);
                     employee = new Manager(record.name, record.id, record.email, record.phone, record.officeNumber);
             
                 break;
@@ -37,7 +36,6 @@ async function init(){
                 case "Engineer":
                     var phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
                         record.phone = record.phone.replace(phoneRegex, "($1) $2-$3");
-                        console.log(record.phone);
                         employee = new Engineer(record.name, record.id, record.email, record.phone, record.github);
 
                 break;
@@ -45,7 +43,6 @@ async function init(){
                 case "Intern":
                     var phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
                         record.phone = record.phone.replace(phoneRegex, "($1) $2-$3");
-                        console.log(record.phone);
                     employee = new Intern(record.name, record.id, record.email, record.phone, record.school);
             
                 break;
