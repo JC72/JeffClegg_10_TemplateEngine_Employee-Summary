@@ -21,20 +21,32 @@ async function init(){
     let employees = [];
 
     for (record of teamInput.allAnswers) {
+
+        
+
         let employee = {};
             switch (record.role){
                 case "Manager":
-                    employee = new Manager(record.name, record.id, record.email, record.officeNumber);
+                    var phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
+                        record.phone = record.phone.replace(phoneRegex, "($1) $2-$3");
+                        console.log(record.phone);
+                    employee = new Manager(record.name, record.id, record.email, record.phone, record.officeNumber);
             
                 break;
 
                 case "Engineer":
-                        employee = new Engineer(record.name, record.id, record.email, record.github);
-                
+                    var phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
+                        record.phone = record.phone.replace(phoneRegex, "($1) $2-$3");
+                        console.log(record.phone);
+                        employee = new Engineer(record.name, record.id, record.email, record.phone, record.github);
+
                 break;
 
                 case "Intern":
-                    employee = new Intern(record.name, record.id, record.email, record.school);
+                    var phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
+                        record.phone = record.phone.replace(phoneRegex, "($1) $2-$3");
+                        console.log(record.phone);
+                    employee = new Intern(record.name, record.id, record.email, record.phone, record.school);
             
                 break;
             }
