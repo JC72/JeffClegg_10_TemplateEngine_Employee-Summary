@@ -50,7 +50,7 @@ The application then takes the user responses and generates an html page that sh
 
 Finally, fs.writeFile command will take the generated project team html file named team.html and creates a folder called "output"  and saves it there.
 
-![HTML Page](https://github.com/JC72/JeffClegg_10_TemplateEngine_Employee-Summary/blob/main/Assets/screenshots/htmlcreation.png)
+![HTML Creation](https://github.com/JC72/JeffClegg_10_TemplateEngine_Employee-Summary/blob/main/Assets/screenshots/htmlcreation.png)
 
 ## File Structure <a name="filestructure"></a>
 
@@ -95,6 +95,10 @@ The following folders and what they contain are listed below:
 ## Tests
 
 run npm run test in the command prompt and it will check the code that was written for the Employee, Engineer, Intern, and Manager javascript files in the lib folder.
+
+TestResults:
+
+![Test Results](https://github.com/JC72/JeffClegg_10_TemplateEngine_Employee-Summary/blob/main/Assets/screenshots/testResults.png)
 
 ## License
 
