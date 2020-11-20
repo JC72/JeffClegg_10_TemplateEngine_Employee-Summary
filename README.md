@@ -8,16 +8,18 @@ This project has been deployed to my Personal GitHub Page. To get this project u
 1. [Links](#Links)
 2. [Project Overview](#projectoverview)
 3. [Demo](#demo)
-4. [License](#license)
-5. [Execution](Execution)
-6. [Contains](#contains)
-7. [Credit](#credit)
-8. [Creators](#creators)
+4. [File Structure](#filestructure)
+5. [Tests](#tests)
+6. [License](#license)
+7. [Execution](Execution)
+8. [Contains](#contains)
+9. [Credit](#credit)
+10. [Creators](#creators)
 
 ## Links
 
 * [GitHub Repository](https://github.com/JC72/JeffClegg_10_TemplateEngine_Employee-Summary)
-! [Demo Video](https://github.com/JC72/JeffClegg_09_GoodReadMe_Generator/blob/main/Assets/video/NodejsVideo.mp4)
+* [Demo Video](https://github.com/JC72/JeffClegg_09_GoodReadMe_Generator/blob/main/Assets/video/NodejsVideo.mp4)
 
 ## Project Overview <a name="projectoverview"></a>
 * Uses HTML, Jest, Node.js, JQuery, and Inquirer to create a program that prompts the user for team information and then generates a html page for viewing.
@@ -25,32 +27,33 @@ This project has been deployed to my Personal GitHub Page. To get this project u
 
 ## Demo:
 
-![](https://github.com/JC72/JeffClegg_09_GoodReadMe_Generator/blob/main/Assets/video/NodejsVideo.gif)
+![](https://github.com/JC72/JeffClegg_10_TemplateEngine_Employee-Summary/blob/main/Assets/video/NodejsVideo.gif)
 
 Once node index.js is run, the application will ask the user for the number of employees in the team.
 
 Then it will ask the user a series of questions about each individual team member:
 
-    * It asks for the team member's Name
-    * then for the team member's ID
-    * then for the team member's Email
-    * then for the team member's Phone Number
-    * then for the team member's Role
-    * finally based on the answer the Role, it asks the user for the info for:
+* It asks for the team member's Name
+* then for the team member's ID
+* then for the team member's Email
+* then for the team member's Phone Number
+* then for the team member's Role
+* finally based on the answer the Role, it asks the user for the info for:
 
-        * If for Manager - "what is the office number?"
-        * If for Engineer - "what is their github id?"
-        * If for Manager - "where do they attend school?"
+    * If for Manager - "what is the office number?"
+    * If for Engineer - "what is their github id?"
+    * If for Manager - "where do they attend school?"
 
 The application then takes the user responses and generates an html page that shows each team members information in their own individual cards on the page.
 
 Finally, fs.writeFile command will take the generated project team html file named team.html and creates a folder called "output"  and saves it there. 
 
-## File Structure
+## File Structure <a name="filestructure"></a>
 
 The following folders and what they contain are listed below:
 
-  <div>JeffClegg_10_TemplateEngine_Employee-Summary<ul style="list-style-type:none;padding:0"><li>output<ul></ul></li><li>lib<ul></ul></li><li>templates<ul></ul></li><li>Assets<ul><li><a href="video">video</a></li><li><a href="screenshots">screenshots</a></li></ul></li><li>test<ul></ul></li><li><a href="README">README</a></li></ul></div>
+  <div>JeffClegg_10_TemplateEngine_Employee-Summary<ul style="list-style-type:none;padding:0">
+  <li>Assets<ul><li><a href="video">video</a></li><li><a href="screenshots">screenshots</a></li><li>lib<ul></ul></li><li>output<ul></ul></li><li>templates<ul></ul></li></ul></li><li>test<ul></ul></li><li><a href="README">README</a></li></ul></div>
 
 ## Tests
 
@@ -99,7 +102,7 @@ This project is licensed under the MIT License License
 
 * Would like to thank stackoverflow for helping me find fixes for some of my conflicts.
 
-* [credit](https://stackoverflow.com/)
+* [Stack Overflow](https://stackoverflow.com/)
 
 ## Creators:
 
