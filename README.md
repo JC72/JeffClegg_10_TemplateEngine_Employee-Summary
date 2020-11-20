@@ -46,7 +46,11 @@ Then it will ask the user a series of questions about each individual team membe
 
 The application then takes the user responses and generates an html page that shows each team members information in their own individual cards on the page.
 
-Finally, fs.writeFile command will take the generated project team html file named team.html and creates a folder called "output"  and saves it there. 
+![HTML Page](https://github.com/JC72/JeffClegg_10_TemplateEngine_Employee-Summary/blob/main/Assets/screenshots/teamhtml.png)
+
+Finally, fs.writeFile command will take the generated project team html file named team.html and creates a folder called "output"  and saves it there.
+
+![HTML Page](https://github.com/JC72/JeffClegg_10_TemplateEngine_Employee-Summary/blob/main/Assets/screenshots/htmlcreation.png)
 
 ## File Structure <a name="filestructure"></a>
 
