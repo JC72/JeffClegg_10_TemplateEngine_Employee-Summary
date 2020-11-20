@@ -68,6 +68,7 @@ The following folders and what they contain are listed below:
     |   |-- screenshots
     |   |   |-- htmlcreation.png
     |   |   |-- teamhtml.png
+    |   |   |-- testResults.png
     |   |-- video
     |       |-- NodejsVideo.gif
     |       |-- NodejsVideo.mp4
