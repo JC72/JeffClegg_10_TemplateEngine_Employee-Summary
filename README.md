@@ -19,7 +19,7 @@ This project has been deployed to my Personal GitHub Page. To get this project u
 ## Links
 
 * [GitHub Repository](https://github.com/JC72/JeffClegg_10_TemplateEngine_Employee-Summary)
-* [Demo Video](https://github.com/JC72/JeffClegg_09_GoodReadMe_Generator/blob/main/Assets/video/NodejsVideo.mp4)
+* [Demo Video](https://drive.google.com/file/d/1mkZOLS0ydBmg6XvwXkJLPno20YCT4KyL/view)
 
 ## Project Overview <a name="projectoverview"></a>
 * Uses HTML, Jest, Node.js, JQuery, and Inquirer to create a program that prompts the user for team information and then generates a html page for viewing.
@@ -52,8 +52,39 @@ Finally, fs.writeFile command will take the generated project team html file nam
 
 The following folders and what they contain are listed below:
 
-  <div>JeffClegg_10_TemplateEngine_Employee-Summary<ul style="list-style-type:none;padding:0">
-  <li>Assets<ul><li><a href="video">video</a></li><li><a href="screenshots">screenshots</a></li><li>lib<ul></ul></li><li>output<ul></ul></li><li>templates<ul></ul></li></ul></li><li>test<ul></ul></li><li><a href="README">README</a></li></ul></div>
+  |-- JeffClegg_10_TemplateEngine_Employee-Summary
+    |-- .gitignore
+    |-- app.js
+    |-- LICENSE
+    |-- package-lock.json
+    |-- package.json
+    |-- README.md
+    |-- Assets
+    |   |-- screenshots
+    |   |   |-- htmlcreation.png
+    |   |   |-- teamhtml.png
+    |   |-- video
+    |       |-- NodejsVideo.gif
+    |       |-- NodejsVideo.mp4
+    |-- lib
+    |   |-- Employee.js
+    |   |-- Engineer.js
+    |   |-- htmlRenderer.js
+    |   |-- Intern.js
+    |   |-- Manager.js
+    |   |-- teamInfo.js
+    |-- output
+    |   |-- team.html
+    |-- templates
+    |   |-- engineer.html
+    |   |-- intern.html
+    |   |-- main.html
+    |   |-- manager.html
+    |-- test
+        |-- Employee.test.js
+        |-- Engineer.test.js
+        |-- Intern.test.js
+        |-- Manager.test.js
 
 ## Tests
 
