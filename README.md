@@ -52,6 +52,7 @@ Finally, fs.writeFile command will take the generated project team html file nam
 
 The following folders and what they contain are listed below:
 
+```bash
   |-- JeffClegg_10_TemplateEngine_Employee-Summary
     |-- .gitignore
     |-- app.js
@@ -85,6 +86,7 @@ The following folders and what they contain are listed below:
         |-- Engineer.test.js
         |-- Intern.test.js
         |-- Manager.test.js
+```
 
 ## Tests
 
